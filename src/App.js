@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Portal from './portal';
+import Timer  from './Timer';
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Portal />
+        <Timer />
       </header>
     </div>
   );
