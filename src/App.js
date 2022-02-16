@@ -1,14 +1,17 @@
+import React from 'react';
 import './App.css';
-import updatedComponent from './withComponent';
+import ComponentOne from './ComponentOne';
 
-function App(props) {
+// Sharing code between react component using a props whose value is a function.
+
+function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {props.name}
+        <ComponentOne render={() => 'shailendra'} />
       </header>
     </div>
   );
 }
 
-export default updatedComponent(App);
+export default App;
